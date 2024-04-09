@@ -9,11 +9,13 @@ function Footer() {
             <ul className='flex justify-between flex-row gap-56 underline text-xs'>
               <li className='flex justify-between underline flex-col gap-3'>
                 <a
+                  target='_blank'
                   href="https://github.com/anujsamdariya07"
                   className="text-white hover:text-gray-300">
                   GitHub
                 </a>
                 <a
+                  target='_blank'
                   href="https://www.facebook.com/anuj.samdariya.9"
                   className="text-white hover:text-gray-300">
                   Facebook
@@ -21,11 +23,13 @@ function Footer() {
               </li>
               <li className='flex underline flex-col gap-3'>
                 <a
+                  target='_blank'
                   href="https://twitter.com/anujsamdariya07"
                   className="text-white hover:text-gray-300">
                   X
                 </a>
                 <a
+                  target='_blank'
                   href="https://instagram.com/anujsamdariya07/"
                   className="text-white hover:text-gray-300">
                   Instagram
@@ -33,7 +37,8 @@ function Footer() {
               </li>
               <li className='flex underline flex-col gap-3'>
                 <a
-                  href="https://linkedin.com/your-linkedin"
+                  target='_blank'
+                  href="https://www.linkedin.com/in/anuj-samdariya-569162254/"
                   className="text-white hover:text-gray-300">
                   LinkedIn
                 </a>

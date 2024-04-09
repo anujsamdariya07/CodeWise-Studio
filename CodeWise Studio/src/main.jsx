@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx'
 import { About, Contact, Home, Login, SignUp } from './components/'
@@ -7,12 +7,18 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, R
 import Layout from './components/Layout.jsx'
 import Account from './components/Account/Account.jsx'
 
+const displayData = (userData) => {
+  console.log(`The recieved data is ${userData}.`)
+  setEmail(userData.email)
+  setPassword(userData.password)
+}
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
-      <Route path='signup' element={<SignUp />} />
+      <Route path='signup' element={<SignUp onSignUp={displayData}/>} />
       <Route path='login' element={<Login />} />
       <Route path='contact' element={<Contact />} />
       <Route path='account' element={<Account />} />
