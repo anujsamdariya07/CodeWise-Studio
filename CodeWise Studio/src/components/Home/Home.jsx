@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Home() {
   return (
@@ -13,11 +14,11 @@ function Home() {
           <button
             className='hover:bg-gray-800 hover:border-white hover:border-s active:border-none focus-visible:border-none'
           >
-            Get Started
+            <Link to='/'>Get Started↗️</Link> 
           </button>
           <button
             className='hover:bg-gray-800 hover:border-white active:border-white focus-visible:border'>
-            Learn More
+            <Link to='/about'>Learn More</Link> 
           </button>
         </div>
       </div>

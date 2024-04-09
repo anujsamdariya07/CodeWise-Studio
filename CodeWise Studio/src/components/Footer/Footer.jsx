@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <div className='flex flex-col '>
       <footer className="flex items-center justify-between bg-gray-800 p-4 -m-8">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
           <div className="flex justify-between space-x-4">
