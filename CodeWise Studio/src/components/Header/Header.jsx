@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import './header.css'
 
 function Header() {
   return (
-    <nav className="flex items-center justify-between bg-gray-800 p-4 -m-8">
+    <nav className="flex items-center justify-between bg-gray-800 p-4 h-auto navbar">
       <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
         <span className="font-semibold text-xl tracking-tight text-gray-100 ">
           <Link
