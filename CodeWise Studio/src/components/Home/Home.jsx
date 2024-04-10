@@ -14,7 +14,7 @@ function Home() {
           <button
             className='hover:bg-gray-800 hover:border-white hover:border-s active:border-none focus-visible:border-none'
           >
-            <Link to='/'>Get Started↗️</Link> 
+            <Link to='/editor'>Get Started↗️</Link> 
           </button>
           <button
             className='hover:bg-gray-800 hover:border-white active:border-white focus-visible:border'>

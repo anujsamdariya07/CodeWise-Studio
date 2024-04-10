@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx'
-import { About, Contact, Home, Login, SignUp } from './components/'
+import { Layout, Home, About, SignUp, Login, Contact, Account, Editor } from './components/'
 import './index.css'
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Routes, BrowserRouter } from 'react-router-dom'
-import Layout from './components/Layout.jsx'
-import Account from './components/Account/Account.jsx'
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
+
 
 const displayData = (userData) => {
   console.log(`The recieved data is ${userData}.`)
@@ -22,6 +21,7 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login />} />
       <Route path='contact' element={<Contact />} />
       <Route path='account' element={<Account />} />
+      <Route path='editor' element={<Editor />} />
     </Route>
   )
 )
