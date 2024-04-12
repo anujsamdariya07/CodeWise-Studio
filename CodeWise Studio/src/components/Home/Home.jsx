@@ -6,18 +6,18 @@ function Home() {
     <>
       <div className='text-white bg-gray h-screen flex flex-col justify-center items-center gap-5'>
         <div>
-          <h1 className='italic  text-2xl'>
+          <h1 className='italic  text-2xl '>
             "Elevate your coding experience with CodeWise - where creativity meets functionality."
           </h1>
         </div>
-        <div className='flex flex-row gap-3'>
+        <div className='flex flex-row gap-3 '>
           <button
-            className='hover:bg-gray-800 hover:border-white hover:border-s active:border-none focus-visible:border-none'
+            className='hover:bg-gray-800 hover:border-white hover:border-s active:border-none focus-visible:border-none p-4'
           >
             <Link to='/editor'>Get Started↗️</Link> 
           </button>
           <button
-            className='hover:bg-gray-800 hover:border-white active:border-white focus-visible:border'>
+            className='hover:bg-gray-800 hover:border-white active:border-white focus-visible:border p-4'>
             <Link to='/about'>Learn More</Link> 
           </button>
         </div>

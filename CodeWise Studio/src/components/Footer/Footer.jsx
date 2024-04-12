@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='flex flex-col '>
-      <footer className="flex items-center bg-gray-800 p-4 ">
+      <footer className="flex items-center bg-gray-800 p-4">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
           <div className="flex justify-between space-x-4">
             <ul className='flex justify-between flex-row gap-56 underline text-xs'>

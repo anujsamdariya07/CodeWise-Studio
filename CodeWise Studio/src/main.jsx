@@ -4,6 +4,8 @@ import App from './App.jsx'
 import { Layout, Home, About, SignUp, Login, Contact, Account, Editor } from './components/'
 import './index.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
+import { ChakraProvider } from '@chakra-ui/react'
+import Theme from './Theme.js';
 
 
 const displayData = (userData) => {
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <ChakraProvider theme={Theme}>
+      <RouterProvider router={router}/>
+    </ChakraProvider>
   </React.StrictMode>,
 )

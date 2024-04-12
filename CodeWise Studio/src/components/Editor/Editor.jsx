@@ -1,17 +1,20 @@
-import './editor.css'; 
+// import './editor.css'; 
 import React from 'react'
+import { Box } from '@chakra-ui/react'
+import CodeEditor from './editorComponents/CodeEditor'
 
 function Editor() {
   return (
     <>
-      <div className="h-screen flex text-white justify-center">
-        <div className="left-area bg-red-600 ">
-          Aside Column
-        </div>
-        <div className="right-area bg-blue-600">
-          Editor Area
-        </div>
-      </div>
+      <Box
+        minH='100vh'
+        bg='#1a202c'
+        color='gray.200'
+        px={6}
+        py={8}
+      >
+        <CodeEditor />
+      </Box>
     </>
   )
 }
